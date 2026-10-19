@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Tribbo Fit Profissional</title>
+<script>
+  // GitHub Pages: qualquer caminho desconhecido volta para o app, que navega
+  // por hash (#/ficha, #/alunos/...). Funciona no domínio próprio (raiz) e no
+  // endereço provisório (/tribbo-pros-site/).
+  (function () {
+    var base = location.pathname.indexOf('/tribbo-pros-site/') === 0 ? '/tribbo-pros-site/' : '/';
+    var rest = location.pathname.slice(base.length).replace(/\/+$/, '');
+    var hash = location.hash || (rest ? '#/' + rest : '');
+    location.replace(base + location.search + hash);
+  })();
+</script>
+</head>
+<body style="background:#07161B"></body>
+</html>
